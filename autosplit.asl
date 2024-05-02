@@ -1,15 +1,14 @@
 state("LiveSplit") {}
 
-init
+onStart
 {
     // I HATE LOCALiZATION I HATE LOCALIZATION I HATE LOCALIZATION
     var fp = System.Globalization.CultureInfo.InvariantCulture;
     vars.currentSplit = 0;
     vars.splits = new TimeSpan[]
     {
-        TimeSpan.Parse("00:00:03.690", fp),
-        TimeSpan.Parse("00:00:05.420", fp),
-        TimeSpan.Parse("00:00:07.210", fp),
+        TimeSpan.Parse("00:00:03.300", fp),
+        TimeSpan.Parse("00:00:04.567", fp),
     };
 }
 
